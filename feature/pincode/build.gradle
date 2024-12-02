@@ -28,6 +28,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.7'
+    }
     buildFeatures {
         compose true
     }
@@ -48,9 +51,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-compose:2.6.1"
     implementation 'androidx.navigation:navigation-compose:2.6.0'
 
-    implementation 'com.google.dagger:hilt-android:2.44'
-    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation 'com.google.dagger:hilt-android:2.48'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.2.0'
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
