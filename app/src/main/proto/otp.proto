@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.licel.samples";
+option java_multiple_files = true;
+
+message Otp {
+  string type = 1;
+  int32 keyId = 2;
+  int32 digits = 3;
+  int32 period = 4;
+  int32 algorithm = 5;
+  string issuer = 6;
+}
+
+message OtpPreferences {
+  repeated Otp otp = 1;
+}
